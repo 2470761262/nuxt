@@ -29,7 +29,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/axios'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -40,10 +41,17 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+      '@nuxtjs/axios'
   ],
   /*
   ** Build configuration
   */
+ render: {
+    resourceHints:false
+ },
+ router: {
+    prefetchLinks: false
+  },
   build: {
     transpile: [/^element-ui/],
     /*

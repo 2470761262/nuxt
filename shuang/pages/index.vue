@@ -20,6 +20,7 @@
           GitHub
         </a>
       </div>
+      <nuxt-link :to="{path:'/child/childPage'}">child</nuxt-link>
     </div>
   </div>
 </template>
