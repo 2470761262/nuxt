@@ -1,6 +1,6 @@
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -46,16 +46,16 @@ module.exports = {
   /*
   ** Build configuration
   */
- render: {
-    resourceHints:false
- },
+//  render: {
+//     resourceHints:false
+//  },
 //  server: {
 //     host: '0.0.0.0',
 //     port: 3000
 //   },
- router: {
-    prefetchLinks: false
-  },
+//  router: {
+//     prefetchLinks: false
+//   },
   build: {
     transpile: [/^element-ui/],
     /*
